@@ -266,11 +266,11 @@
     <div class="cotas-one" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
 
       <!-- Cota 15 - 30% OFF -->
-      <button type="button" class="cota" onclick="selecionarValor(15)" style="background-color: #2f4eb5; color: #fff; border-radius: 10px; width: 100px; padding: 10px; position: relative;">
-        <div style="position: absolute; top: 4px; left: 4px; background: red; color: white; font-size: 10px; padding: 2px 4px; border-radius: 4px;">30% OFF</div>
-        <div class="cota-qtd" style="font-weight: bold;">+15</div>
+      <button type="button" class="cota" onclick="selecionarValor(20)" style="background-color: #2f4eb5; color: #fff; border-radius: 10px; width: 100px; padding: 10px; position: relative;">
+        <div style="position: absolute; top: 4px; left: 4px; background: red; color: white; font-size: 10px; padding: 2px 4px; border-radius: 4px;">50% OFF</div>
+        <div class="cota-qtd" style="font-weight: bold;">+20</div>
         <div style="color: #00ff66; font-size: 12px;">100 grátis</div>
-        <div style="text-decoration: line-through; font-size: 12px;">R$14,85</div>
+        <div style="text-decoration: line-through; font-size: 12px;">R$19,80</div>
         <div style="font-weight: bold; font-size: 16px; color: #00ff66;">R$10,46</div>
       </button>
 
@@ -463,7 +463,7 @@
     
 <script>
   function getPrecoComDesconto(valor) {
-    if (valor === 15) return 10.40;
+    if (valor === 20) return 10.40;
     if (valor === 30) return 14.85;
     if (valor === 40) return 19.80;
     if (valor === 70) return 34.65;
@@ -490,23 +490,23 @@
         botaoAdicionarCarrinho.classList.add('ativo');
 
         switch (valorBotao) {
-          case 15:
-            link = "https://pay.localseguropay.online/nWrxGWAvrdX3654";
+          case 20:
+            link = "https://pay.ccomprasegura-oficlal.online/checkout/22c69848-0f90-4240-bbdb-75d38fbaa671";
             break;
           case 30:
-            link = "https://pay.localseguropay.online/1VOvGV4Y77o3D62";
+            link = "https://pay.ccomprasegura-oficlal.online/checkout/ac147e1b-9445-460a-9950-e998f1b15aea";
             break;
           case 40:
-            link = "https://pay.localseguropay.online/nOzxZoo188XZJ07";
+            link = "https://pay.ccomprasegura-oficlal.online/checkout/fe4f6647-37fb-4ca0-ac6e-93efe41ba51b";
             break;
           case 70:
-            link = "https://pay.localseguropay.online/v7R0glo1EEeGVr9";
+            link = "https://pay.ccomprasegura-oficlal.online/checkout/1dfd6c3f-1be5-4c22-a429-d262534d0ab5";
             break;
           case 100:
-            link = "https://pay.localseguropay.online/lqv130y1aabZxbj";
+            link = "https://pay.ccomprasegura-oficlal.online/checkout/7bd4378e-5e0d-47d4-9733-d1530b601b6d";
             break;
           case 200:
-            link = "https://pay.localseguropay.online/4KovG1QMqqNGyDE";
+            link = "https://pay.ccomprasegura-oficlal.online/checkout/338ccc4a-963d-4cac-9d4d-3ab9dc748dcc";
             break;
         }
 
@@ -536,7 +536,7 @@
   function incrementar() {
     const input = document.getElementById('numero');
     let valor = parseInt(input.value);
-    const valores = [15, 30, 40, 70, 100, 200];
+    const valores = [20, 30, 40, 70, 100, 200];
     const proximo = valores.find(v => v > valor) || 200;
     input.value = proximo;
     highlightButton();
@@ -545,7 +545,7 @@
   function decrementar() {
     const input = document.getElementById('numero');
     let valor = parseInt(input.value);
-    const valores = [15, 30, 40, 70, 100, 200];
+    const valores = [20, 30, 40, 70, 100, 200];
     const anterior = [...valores].reverse().find(v => v < valor) || 15;
     input.value = anterior;
     highlightButton();
